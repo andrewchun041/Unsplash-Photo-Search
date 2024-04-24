@@ -1,0 +1,151 @@
+/* -------------------------------------------------------------------------- */
+/*                              Responsive Styles                             */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 Font Families                              */
+/* -------------------------------------------------------------------------- */
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url(../assets/fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Open Sans Medium";
+    src: url(../assets/fonts/OpenSans-Medium.ttf);
+    font-weight: 500;
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                       Desktop and Tablet Text Styles                       */
+  /* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                            Primary Color Styles                            */
+  /* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                               Padding Styles                               */
+  /* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                               Desktop Design                               */
+  /* -------------------------------------------------------------------------- */
+  @media (min-width: 320px) {
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      height: 100vw;
+    }
+    /* -------------------------------------------------------------------------- */
+    /*                                 Text Styles                                */
+    /* -------------------------------------------------------------------------- */
+    h1 {
+      font-size: 50px;
+      line-height: 68px;
+      font-family: "Open Sans Regular";
+    }
+    h5 {
+      font-size: 14px;
+      line-height: 20px;
+      font-family: "Open Sans Medium";
+    }
+    /* -------------------------------------------------------------------------- */
+    /*                               Section Styles                               */
+    /* -------------------------------------------------------------------------- */
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: top;
+      flex-direction: column;
+      background: #fff;
+      width: 100%;
+      height: 300px;
+    }
+    .site-header__title {
+      text-align: center;
+      width: 100%;
+      background: #d8d8d8;
+      color: #4e4e4e;
+      padding: 48px;
+    }
+    .form-container {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      width: 100%;
+      height: 25%;
+      padding: 40px 32px;
+    }
+    .form__label {
+      color: #d8d8d8;
+    }
+    .form__search {
+      font-size: 14px;
+      line-height: 20px;
+      font-family: "Open Sans Medium";
+      border: 1px solid #d8d8d8;
+      border-radius: 3px;
+      outline: none;
+      box-shadow: none;
+      padding: 8px 16px;
+    }
+    .form__btn {
+      margin: 16px;
+      padding: 11px 16px;
+      color: #fff;
+      background-color: #557bc0;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+    .form-sort__btn {
+      margin: 16px;
+      padding: 8px 16px;
+      color: #fff;
+      color: #4e4e4e;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+    .gallery-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: top;
+      width: 100%;
+      height: 900px;
+    }
+  
+    .photo-container {
+      height: 800px;
+      width: 800px;
+
+      /* display: inline-table; */
+      
+      /* display: grid;
+      grid-template-columns: auto auto auto;
+        grid-gap: 3rem; */
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+        column-gap: 1rem;
+    }
+    .photo-row {
+      flex-direction: row;
+    }
+  
+    .api-photo {
+      /* background: #d8d8d8; */
+      width: 150px;
+      height: 200px;
+        object-fit: cover;
+
+    border-radius: 10px;
+
+    }
+  } /*# sourceMappingURL=styles.css.map */
+  

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Photo Sorter</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script type="module" src="./scripts/main.js" defer></script>
+  </head>
+  <body>
+     <!-- header section -->
+     <header class="site-header">
+       <h1 class="site-header__title">Photo Gallery</h1>
+       <form class="form" action="submit">
+          <label class="form__label" for="photo-search"></label>
+          <input class="form__search" id="photo-search" name="photoSearch" type="search" placeholder="Search">
+          <button class="form__btn" type="submit">Search</button>
+       </form>
+     </header>
+
+    <!-- Photo gallery section -->
+    <section class="gallery-section">
+        <form class="form-sort">
+            <button class="form-sort__btn" type="submit">Sort by: Colour</button>          
+        </form>
+        <div class="photo-container" id="gallery">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </section>
+    
+  </body>
+</html>
